@@ -3,7 +3,7 @@
   gap: 2rem;
   align-items: center;
   padding: 0 2rem;
-  color: #ff6060;
+  // color: #ff6060;
   font-weight: 500;
   font-size: 24px;
 
@@ -12,3 +12,11 @@
   }
 }
 
+.navbar a {
+  text-decoration: none;
+  color: #ff6060;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
