@@ -7,6 +7,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <h1>404 page not found</h1>,
   },
   {
     path: "/logement",
@@ -15,10 +16,6 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <h1>A propos</h1>,
-  },
-  {
-    path: "/error",
-    element: <h1>Erreur 404</h1>,
   },
 ]);
 
