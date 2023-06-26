@@ -1,7 +1,7 @@
 import React from "react";
 import "./Navbar.scss";
 import logokasa from "../assets/logokasa.png";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -9,12 +9,12 @@ function Navbar() {
       <div className="navbar__logo">
         <img src={logokasa} alt="logokasa" />
       </div>
-      <Link to="/">
+      <NavLink to="/">
         <div>Accueil</div>
-      </Link>
-      <Link to="/about">
+      </NavLink>
+      <NavLink to="/about">
         <div>A propos</div>
-      </Link>
+      </NavLink>
     </nav>
   );
 }
