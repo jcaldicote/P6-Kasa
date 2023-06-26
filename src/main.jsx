@@ -8,6 +8,18 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
   },
+  {
+    path: "/logement",
+    element: <h1>Logement</h1>,
+  },
+  {
+    path: "/about",
+    element: <h1>A propos</h1>,
+  },
+  {
+    path: "/error",
+    element: <h1>Erreur 404</h1>,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
