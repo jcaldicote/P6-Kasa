@@ -1,0 +1,19 @@
+import "./ErrorPage.scss";
+import { NavLink } from "react-router-dom";
+import Navbar from "../components/Navbar.jsx";
+
+function ErrorPage() {
+  return (
+    <div className="message">
+      <h1 className="message__h1">404</h1>
+      <p className="message__error">
+        Oups! La page que vous demandez n'existe pas.
+      </p>
+      <NavLink to="/" className="message__back">
+        Retournez sur la page d'accueil.
+      </NavLink>
+    </div>
+  );
+}
+
+export default ErrorPage;

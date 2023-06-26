@@ -3,12 +3,14 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "../App.jsx";
 import Navbar from "../components/Navbar.jsx";
 import Footer from "../components/Footer.jsx";
+import ErrorPage from "../pages/ErrorPage.jsx";
+import TestErrorPage from "../pages/TestErrorPage.jsx";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <h1>404 page not found</h1>,
+    errorElement: <TestErrorPage />,
   },
   {
     path: "/logement",
