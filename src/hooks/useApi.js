@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import dataUrl from "../data/data.json?url";
 
 function useApi(method, url, body, options) {
-  const [data, setData] = useState(null);
-  const [error, setError] = useState(null);
+  const [data, setData] = useState(undefined);
+  const [error, setError] = useState(undefined);
   const [loading, setLoading] = useState(method === "GET");
   const [_reload, setReload] = useState(0);
 
@@ -39,7 +39,7 @@ export const useFetchLogements = () => useApi("GET", dataUrl);
 // export const useFetchLogement = (id) => useApi ("GET", `/logements/${id}`)
 
 export const useFetchLogement = (id) => {
-  const { data, ...rest } = useApi("GET", dataUrl);
-  const house = data.find((house) => house.id === id);
-  return { data: house, ...rest };
+  let { data, loading, ...rest } = useApi("GET", dataUrl);
+  const house = data?.find((house) => house.id === id);
+  return { data: house, loading, ...rest };
 };

@@ -8,13 +8,9 @@ import "./Home.scss";
 export default function Home() {
   const { data, loading, error } = useFetchLogements();
 
-  if (loading) {
-    return <div>Page is loading ...</div>;
-  }
+  if (loading) return <div>Page is loading ...</div>;
+  if (error) return <ErrorPage />;
 
-  if (error) {
-    return <ErrorPage />;
-  }
   return (
     <div>
       <DevDump data={{ loading, data }} />

@@ -20,8 +20,9 @@ export const router = createBrowserRouter([
       </Layout>
     ),
   },
+
   {
-    path: "/logement",
+    path: "/logement/:logementId",
     element: (
       <Layout>
         <Logement />
