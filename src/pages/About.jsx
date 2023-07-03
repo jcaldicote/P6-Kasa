@@ -1,9 +1,10 @@
-import React from 'react';
+import React from "react";
+import { AboutBanner } from "../components/Banner.jsx";
 
 export default function About() {
   return (
-    <div>
-      <h1>A propos</h1>
-    </div>
+    <>
+      <AboutBanner />
+    </>
   );
 }
