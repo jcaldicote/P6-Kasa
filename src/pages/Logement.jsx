@@ -4,8 +4,8 @@ import Layout from "../components/Layout";
 import DevDump from "../components/DevDump";
 
 export default function Logement() {
-  //   let { id } = useParams();
-  //   const { data, loading } = useFetchLogement(id);
+  // let { id } = useParams();
+  // const { data, loading } = useFetchLogement(id);
   return (
     <>
       {/* <DevDump data={{ loading, data }} /> */}

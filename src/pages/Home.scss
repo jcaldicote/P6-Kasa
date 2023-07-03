@@ -1,0 +1,9 @@
+.galery-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 4rem;
+  margin: 2rem 5rem;
+  padding: 4rem;
+  background-color: #f6f6f6;
+  border-radius: 10px;
+}
