@@ -1,15 +1,19 @@
-import React from 'react';
-import { createBrowserRouter } from 'react-router-dom';
-import Layout from '../components/Layout.jsx';
-import Home from '../pages/Home.jsx';
-import Logement from '../pages/Logement.jsx';
-import ErrorPage from '../pages/ErrorPage.jsx';
-import About from '../pages/About.jsx';
+import React from "react";
+import { createBrowserRouter } from "react-router-dom";
+import Layout from "../components/Layout.jsx";
+import Home from "../pages/Home.jsx";
+import Logement from "../pages/Logement.jsx";
+import ErrorPage from "../pages/ErrorPage.jsx";
+import About from "../pages/About.jsx";
 
 export const router = createBrowserRouter([
   {
-    path: '/',
-    element: <Home />,
+    path: "/",
+    element: (
+      <Layout>
+        <Home />
+      </Layout>
+    ),
     errorElement: (
       <Layout>
         <ErrorPage />
@@ -17,11 +21,15 @@ export const router = createBrowserRouter([
     ),
   },
   {
-    path: '/logement',
-    element: <Logement />,
+    path: "/logement",
+    element: (
+      <Layout>
+        <Logement />
+      </Layout>
+    ),
   },
   {
-    path: '/about',
+    path: "/about",
     element: (
       <Layout>
         <About />
