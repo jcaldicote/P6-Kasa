@@ -6,7 +6,7 @@ import NavBar from "./Navbar";
 export default function Layout({ children }) {
   return (
     <div>
-      <DevNavBar
+      {/* <DevNavBar
         links={[
           "/",
           "/logement",
@@ -15,7 +15,7 @@ export default function Layout({ children }) {
           "/about",
           "/!!!",
         ]}
-      />
+      /> */}
       <NavBar />
       {children}
       <Footer />

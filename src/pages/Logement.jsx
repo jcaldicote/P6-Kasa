@@ -13,7 +13,7 @@ export default function Logement() {
 
   return (
     <>
-      <DevDump data={{ loading, data }} />
+      {/* <DevDump data={{ loading, data }} /> */}
       <h1>Logement</h1>
     </>
   );

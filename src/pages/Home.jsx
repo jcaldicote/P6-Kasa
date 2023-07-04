@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <div>
-      <DevDump data={{ loading, data }} />
+      {/* <DevDump data={{ loading, data }} /> */}
       <MainBanner />
       <section className="galery-container">
         {data.map((item) => (
