@@ -1,15 +1,35 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./Collapse.scss";
 
 export function Collapse() {
-  const elts = document.querySelectorAll(".accordion-element");
-  const firstActive = document.querySelector(".accordion .active");
-  const section = firstActive.children[1].querySelector("p");
-  const sectionHeight = section.offsetHeight + 20;
-  firstActive.children[1].style.height = sectionHeight + "px";
+  const accordionRef = useRef(null);
+
+  useEffect(() => {
+    const elts = accordionRef.current.querySelectorAll(".accordion-element");
+    const firstActive =
+      accordionRef.current.querySelector(".accordion .active");
+    let section = firstActive.children[1].querySelector("p");
+    let sectionHeight = section.offsetHeight + 20;
+    firstActive.children[1].style.height = sectionHeight + "px";
+
+    for (let elt of elts) {
+      elt.addEventListener("click", function () {
+        const active = accordionRef.current.querySelector(".accordion .active");
+
+        active.classList.remove("active");
+        active.children[1].style.height = 0;
+
+        this.classList.add("active");
+
+        let section = this.children[1].querySelector("p");
+        let sectionHeight = section.offsetHeight + 20;
+        this.children[1].style.height = sectionHeight + "px";
+      });
+    }
+  }, []);
 
   return (
-    <div className="accordion">
+    <div ref={accordionRef} className="accordion">
       <div className="accordion-element active">
         <h1 className="accordion-header">Fiabilité</h1>
         <div className="accordion-content">
@@ -49,7 +69,7 @@ export function Collapse() {
             sécurité établis par nos services. En laissant une note aussi bien à
             l'hôte qu'au locataire, cela permet à nos équipes de vérifier que
             les standards sont bien respectés. Nous organisons également des
-            ateliers sur la sécurité domestique pour nos hôtes..
+            ateliers sur la sécurité domestique pour nos hôtes.
           </p>
         </div>
       </div>
