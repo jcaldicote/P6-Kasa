@@ -1,0 +1,25 @@
+.accordion-element {
+  margin-bottom: 2em;
+  h1 {
+    color: white;
+    background-color: #ff6060;
+    font-size: 24px;
+    padding: 10px 20px 10px 15px;
+    border-radius: 5px;
+    margin: 0;
+  }
+}
+
+.accordion-content {
+  color: #ff6060;
+  background-color: #f6f6f6;
+  font-size: 18px;
+  border-radius: 10px 10px 5px 5px;
+  height: 0;
+  overflow: hidden;
+  margin: 0;
+  p {
+    margin: 0;
+    padding: 1rem;
+  }
+}
