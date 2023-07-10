@@ -13,8 +13,8 @@ export function Carousel({ images }) {
   };
 
   const nextImage = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    setCurrentIndex((nextIndex) =>
+      nextIndex === images.length - 1 ? 0 : nextIndex + 1
     );
   };
 
