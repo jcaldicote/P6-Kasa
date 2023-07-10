@@ -15,15 +15,19 @@
     width: 60%;
 
     &_title {
-      margin-bottom: 1rem;
+      margin-bottom: 16px;
       h2 {
         font-size: 36px;
         font-weight: 500;
-        margin: 0.2em 0;
+        margin: 3px 0;
       }
       span {
         font-size: 18px;
-        margin: 0.2em;
+        margin: 3px;
+      }
+      .tag {
+        display: flex;
+        align-items: center;
       }
     }
   }

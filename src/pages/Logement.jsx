@@ -5,6 +5,7 @@ import DevDump from "../components/DevDump";
 import ErrorPage from "./ErrorPage.jsx";
 import { Carousel } from "../components/Slideshow.jsx";
 import "./Logement.scss";
+import { Tag } from "../components/Tag.jsx";
 
 export default function Logement() {
   let { logementId } = useParams();
@@ -23,6 +24,11 @@ export default function Logement() {
             <div className="logement__main_title">
               <h2>{data.title}</h2>
               <span>{data.location}</span>
+              <div className="tag">
+                {data.tags.map((t, index) => (
+                  <Tag key={index} tag={t} />
+                ))}
+              </div>
             </div>
           </div>
         </div>
