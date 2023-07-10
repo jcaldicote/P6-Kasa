@@ -3,6 +3,8 @@ import { useFetchLogement } from "../hooks/useApi";
 import Layout from "../components/Layout";
 import DevDump from "../components/DevDump";
 import ErrorPage from "./ErrorPage.jsx";
+import { Carousel } from "../components/Slideshow.jsx";
+import "./Logement.scss";
 
 export default function Logement() {
   let { logementId } = useParams();
@@ -14,7 +16,17 @@ export default function Logement() {
   return (
     <>
       {/* <DevDump data={{ loading, data }} /> */}
-      <h1>Logement</h1>
+      <div className="logement">
+        <Carousel images={data.pictures} />
+        <div className="logement-details">
+          <div className="logement__main">
+            <div className="logement__main_title">
+              <h2>{data.title}</h2>
+              <span>{data.location}</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

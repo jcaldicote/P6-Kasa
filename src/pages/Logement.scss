@@ -1,0 +1,30 @@
+.logement {
+  margin: 4rem 5rem;
+  color: #ff6060;
+
+  &-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+  }
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 60%;
+
+    &_title {
+      margin-bottom: 1rem;
+      h2 {
+        font-size: 36px;
+        font-weight: 500;
+        margin: 0.2em 0;
+      }
+      span {
+        font-size: 18px;
+        margin: 0.2em;
+      }
+    }
+  }
+}
