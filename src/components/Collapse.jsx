@@ -6,11 +6,12 @@ export function Collapse() {
 
   useEffect(() => {
     const elts = accordionRef.current.querySelectorAll(".accordion-element");
-    const firstActive =
-      accordionRef.current.querySelector(".accordion .active");
-    let section = firstActive.children[1].querySelector("p");
-    let sectionHeight = section.offsetHeight + 20;
-    firstActive.children[1].style.height = sectionHeight + "px";
+
+    // const firstActive =
+    //   accordionRef.current.querySelector(".accordion .active");
+    // let section = firstActive.children[1].querySelector("p");
+    // let sectionHeight = section.offsetHeight + 20;
+    // firstActive.children[1].style.height = sectionHeight + "px";
 
     for (let elt of elts) {
       elt.addEventListener("click", function () {
@@ -30,7 +31,7 @@ export function Collapse() {
 
   return (
     <div ref={accordionRef} className="accordion">
-      <div className="accordion-element active">
+      <div className="accordion-element active ">
         <h1 className="accordion-header">Fiabilité</h1>
         <div className="accordion-content">
           <p>
@@ -40,7 +41,7 @@ export function Collapse() {
           </p>
         </div>
       </div>
-      <div className="accordion-element">
+      <div className="accordion-element ">
         <h1 className="accordion-header">Respect</h1>
         <div className="accordion-content">
           <p>
