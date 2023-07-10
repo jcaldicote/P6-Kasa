@@ -10,6 +10,16 @@
     border-radius: 5px;
     margin: 0;
     cursor: pointer;
+    &__chevron {
+      font-size: 800;
+      margin-left: 20px;
+    }
+  }
+  &.is--active &__header {
+    &__chevron {
+      transform: rotate(180deg);
+      transition: all 1s;
+    }
   }
 
   &__content {

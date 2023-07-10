@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import { FaChevronUp } from "react-icons/fa";
 import "./Collapse.scss";
 
 export function Collapse({ title, children, active }) {
@@ -9,7 +10,7 @@ export function Collapse({ title, children, active }) {
   const toggleActive = () => setActive((active) => !active);
 
   useEffect(() => {
-    setSectionHeight(collapseRef.current.offsetHeight);
+    setSectionHeight(collapseRef.current.offsetHeight + 2);
   }, [children]);
 
   return (
@@ -20,6 +21,9 @@ export function Collapse({ title, children, active }) {
       <div className="Collapse__element">
         <h1 className="Collapse__header" onClick={toggleActive}>
           {title}
+          <span>
+            <FaChevronUp className="Collapse__header__chevron" />
+          </span>
         </h1>
         <div className="Collapse__content">
           <div ref={collapseRef}>{children}</div>
