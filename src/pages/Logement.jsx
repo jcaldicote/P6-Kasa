@@ -23,7 +23,9 @@ export default function Logement() {
           <div className="logement__main">
             <div className="logement__main_title">
               <h2>{data.title}</h2>
-              <span>{data.location}</span>
+              <span className="logement__main_title__location">
+                {data.location}
+              </span>
               <div className="tag">
                 {data.tags.map((t, index) => (
                   <Tag key={index} tag={t} />
