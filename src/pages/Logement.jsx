@@ -7,6 +7,9 @@ import { Carousel } from "../components/Slideshow.jsx";
 import "./Logement.scss";
 import { Tag } from "../components/Tag.jsx";
 import { Stars } from "../components/Stars.jsx";
+import { Collapse } from "../components/Collapse.jsx";
+import { Equipment } from "../components/Equipment.jsx";
+
 export default function Logement() {
   let { logementId } = useParams();
   const { data, loading, error } = useFetchLogement(logementId);
@@ -48,6 +51,14 @@ export default function Logement() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="logement__collapse">
+          <Collapse title="Description">{data.description}</Collapse>
+          <Collapse title="Equipements">
+            {data.equipments.map((e, index) => (
+              <Equipment key={index} equipment={e} />
+            ))}
+          </Collapse>
         </div>
       </div>
     </>

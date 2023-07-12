@@ -52,22 +52,27 @@
         text-align: end;
       }
     }
-    .logement__stats {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
+  }
+  &__stats {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    // align-items: center;
 
-      .count-box {
-        margin: 10px;
-        .count-star {
-          margin: 0.3em;
-          font-size: 24px;
-          .not-filled {
-            color: #e3e3e3;
-          }
+    .count-box {
+      margin: 10px;
+      .count-star {
+        margin: 0.3em;
+        font-size: 24px;
+        .not-filled {
+          color: #e3e3e3;
         }
       }
     }
+  }
+  &__collapse {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
 }
