@@ -11,7 +11,7 @@
   &__main {
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
+    flex-direction: row;
     width: 60%;
 
     &_title {
@@ -27,9 +27,28 @@
         margin: 3px 0px 10px 0px;
         font-weight: 500;
       }
-      .tag {
-        display: flex;
-        font-size: 14px;
+    }
+    .tag {
+      display: flex;
+      font-size: 14px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    &_name {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      img {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+      }
+
+      span {
+        font-size: 18px;
+        width: 60%;
+        text-align: end;
       }
     }
   }

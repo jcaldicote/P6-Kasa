@@ -32,6 +32,12 @@ export default function Logement() {
                 ))}
               </div>
             </div>
+            <div className="logement__stats">
+              <div className="logement__main_name">
+                <span>{data.host.name}</span>
+                <img src={data.host.picture} alt={data.host.name} />
+              </div>
+            </div>
           </div>
         </div>
       </div>
