@@ -10,7 +10,7 @@ export function Collapse({ title, children, active }) {
   const toggleActive = () => setActive((active) => !active);
 
   useEffect(() => {
-    setSectionHeight(collapseRef.current.offsetHeight + 2);
+    setSectionHeight(collapseRef.current.offsetHeight + 5);
   }, [children]);
 
   return (

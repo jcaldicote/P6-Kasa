@@ -72,7 +72,13 @@
   }
   &__collapse {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    gap: 10px;
+    font-size: 18px;
+    &_item {
+      flex-basis: 50%;
+    }
+  }
+  .Collapse__content {
+    font-size: 18px;
   }
 }

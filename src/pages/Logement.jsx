@@ -53,12 +53,16 @@ export default function Logement() {
           </div>
         </div>
         <div className="logement__collapse">
-          <Collapse title="Description">{data.description}</Collapse>
-          <Collapse title="Equipements">
-            {data.equipments.map((e, index) => (
-              <Equipment key={index} equipment={e} />
-            ))}
-          </Collapse>
+          <div className="logement__collapse_item">
+            <Collapse title="Description">{data.description}</Collapse>
+          </div>
+          <div className="logement__collapse_item">
+            <Collapse title="Equipements">
+              {data.equipments.map((e, index) => (
+                <Equipment key={index} equipment={e} />
+              ))}
+            </Collapse>
+          </div>
         </div>
       </div>
     </>
