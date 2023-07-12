@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    width: 60%;
+    min-width: 100%;
 
     &_title {
       margin-bottom: 16px;
