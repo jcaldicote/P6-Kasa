@@ -6,13 +6,15 @@ import ErrorPage from "./ErrorPage.jsx";
 import { Carousel } from "../components/Slideshow.jsx";
 import "./Logement.scss";
 import { Tag } from "../components/Tag.jsx";
-
+import { Stars } from "../components/Stars.jsx";
 export default function Logement() {
   let { logementId } = useParams();
   const { data, loading, error } = useFetchLogement(logementId);
 
   if (loading) return <div>Page is loading ...</div>;
   if (error || !data) return <ErrorPage />;
+
+  const starCounts = Stars(data.rating);
 
   return (
     <>
@@ -36,6 +38,13 @@ export default function Logement() {
               <div className="logement__main_name">
                 <span>{data.host.name}</span>
                 <img src={data.host.picture} alt={data.host.name} />
+              </div>
+              <div className="count-box">
+                {starCounts.map((count, index) => (
+                  <span className="count-star" key={index}>
+                    {count}
+                  </span>
+                ))}
               </div>
             </div>
           </div>

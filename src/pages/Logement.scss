@@ -48,7 +48,25 @@
       span {
         font-size: 18px;
         width: 60%;
+        font-weight: 500;
         text-align: end;
+      }
+    }
+    .logement__stats {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      .count-box {
+        margin: 10px;
+        .count-star {
+          margin: 0.3em;
+          font-size: 24px;
+          .not-filled {
+            color: #e3e3e3;
+          }
+        }
       }
     }
   }
