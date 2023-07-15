@@ -36,3 +36,13 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .card {
+    max-width: 767px;
+  }
+  .card__container {
+    height: auto;
+    aspect-ratio: 16/9;
+  }
+}

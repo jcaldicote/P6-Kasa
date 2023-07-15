@@ -28,3 +28,15 @@
     text-decoration: underline;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .navbar {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    font-size: 12px;
+  }
+}

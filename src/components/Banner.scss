@@ -22,3 +22,24 @@
     font-size: 48px;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .main-banner__txt {
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main-banner {
+    height: 111px;
+    margin: 2rem 1rem;
+    &__txt {
+      font-size: 24px;
+      margin: 1.5rem;
+    }
+  }
+  .about-banner {
+    height: 225px;
+    margin: 2rem 1rem;
+  }
+}
