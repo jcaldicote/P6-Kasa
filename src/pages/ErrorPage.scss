@@ -16,3 +16,22 @@
     color: #ff6060;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .message {
+    margin: 10rem 3rem;
+    &__h1 {
+      font-size: 96px;
+      font-weight: 700;
+    }
+    &__error {
+      font-size: 18px;
+      font-weight: 500;
+      margin: 0 0 6rem;
+    }
+    &__back {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+}
