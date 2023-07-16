@@ -1,4 +1,9 @@
 .collapse-container {
-  //   border: 2px red solid;
   margin: auto 12rem 2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .collapse-container {
+    margin: 1rem 1rem 6rem 1rem;
+  }
 }
