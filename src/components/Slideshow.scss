@@ -32,3 +32,19 @@
     color: #ffffff;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .arrow {
+    &_left {
+      font-size: 70px;
+      margin-top: 11rem;
+    }
+    &_right {
+      font-size: 70px;
+      margin-top: 11rem;
+    }
+    .count {
+      display: none;
+    }
+  }
+}
