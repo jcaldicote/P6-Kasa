@@ -1,5 +1,4 @@
 import MainBanner from "../components/Banner";
-import DevDump from "../components/DevDump";
 import { useFetchLogements } from "../hooks/useApi";
 import Card from "../components/Card.jsx";
 import ErrorPage from "./ErrorPage.jsx";
@@ -13,7 +12,6 @@ export default function Home() {
 
   return (
     <div>
-      {/* <DevDump data={{ loading, data }} /> */}
       <MainBanner />
       <section className="galery-container">
         {data.map((item) => (

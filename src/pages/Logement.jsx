@@ -1,7 +1,5 @@
 import { useParams } from "react-router-dom";
 import { useFetchLogement } from "../hooks/useApi";
-import Layout from "../components/Layout";
-import DevDump from "../components/DevDump";
 import ErrorPage from "./ErrorPage.jsx";
 import { Carousel } from "../components/Slideshow.jsx";
 import "./Logement.scss";
@@ -21,7 +19,6 @@ export default function Logement() {
 
   return (
     <>
-      {/* <DevDump data={{ loading, data }} /> */}
       <div className="logement">
         <Carousel images={data.pictures} />
         <div className="logement-details">
