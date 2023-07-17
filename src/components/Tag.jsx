@@ -1,4 +1,4 @@
-import "../components/tag.scss";
+import "../components/Tag.scss";
 import PropTypes from "prop-types";
 
 export function Tag(props) {
