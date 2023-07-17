@@ -22,7 +22,7 @@ export function Collapse({ title, children, active }) {
         <h1 className="Collapse__header" onClick={toggleActive}>
           {title}
           <span>
-            <FaChevronUp className="Collapse__header__chevron" />
+            <FaChevronUp className="Collapse__chevron" />
           </span>
         </h1>
         <div className="Collapse__content">

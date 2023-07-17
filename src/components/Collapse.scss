@@ -13,15 +13,14 @@
     border-radius: 5px;
     margin: 0;
     cursor: pointer;
-    &__chevron {
-      font-size: 800;
-    }
   }
-  &.is--active &__header {
-    &__chevron {
-      transform: rotate(180deg);
-      transition: all 1s;
-    }
+  &__chevron {
+    font-size: 800;
+    transition: all 0.3s;
+  }
+
+  &.is--active &__chevron {
+    transform: rotate(180deg);
   }
 
   &__content {
@@ -32,7 +31,7 @@
     height: 0;
     overflow: hidden;
     margin: 0;
-    transition: 1s height;
+    transition: 0.3s height;
   }
   &.is--active &__content {
     height: var(--sectionHeight);
