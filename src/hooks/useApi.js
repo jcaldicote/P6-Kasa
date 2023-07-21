@@ -32,11 +32,7 @@ function useApi(method, url, body, options) {
   return { data, error, loading, reload };
 }
 
-// export const useFetchLogements = () => useApi ("GET", "/logements")
-
 export const useFetchLogements = () => useApi("GET", dataUrl);
-
-// export const useFetchLogement = (id) => useApi ("GET", `/logements/${id}`)
 
 export const useFetchLogement = (id) => {
   let { data, loading, ...rest } = useApi("GET", dataUrl);
