@@ -1,5 +1,5 @@
-import './ErrorPage.scss';
-import { NavLink } from 'react-router-dom';
+import "./ErrorPage.scss";
+import { NavLink } from "react-router-dom";
 
 function ErrorPage() {
   return (

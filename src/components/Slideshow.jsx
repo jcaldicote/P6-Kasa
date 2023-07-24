@@ -31,7 +31,7 @@ export function Carousel({ images }) {
       <div className="count">
         {images.length > 1 && `${currentIndex + 1}/${images.length}`}
       </div>
-      <img src={currentImage} alt={`Image ${currentIndex}`} />
+      <img src={currentImage} alt={` ${currentIndex}`} />
     </div>
   );
 }

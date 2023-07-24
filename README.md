@@ -2,14 +2,11 @@
 
 Projet 6 de la formation Developpeur Web OpenClassRooms
 
-**Version hébergée**: https://jcaldicote.github.io/P6-Kasa/  
 **Code source**: https://github.com/jcaldicote/P6-Kasa
 
 ## Mission
 
 **Créez une application web de location immobilière avec React**
-
-**Venez visiter mon site** https://jcaldicote.github.io/P6-Kasa/
 
 ## Installation :
 
@@ -23,20 +20,18 @@ Projet 6 de la formation Developpeur Web OpenClassRooms
 
 3. Lancer le front-end:
 
-- `npm run dev`
+- `npm start`
 
 Le front-end sera lancé à l'URL:
-` http://localhost:5173/`.
+`http://localhost:3000/`
 
 ## Développé avec :
 
 - [Visual Studio Code](https://code.visualstudio.com/) - Éditeur de texte
 - [Sass](https://sass-lang.com/) - Préprocesseur CSS
 - [React 18](https://fr.reactjs.org/) - Bibliothèque JavaScript libre développée par Facebook
-- [Vite](https://vitejs.dev/) - Boîte à outils pour initier un projet React
 - [React Router V6](https://reactrouter.com/) - Bibliothèque de routage pour React
 - [GitHub](https://github.com/) - Outil de gestion de versions
-- [GitHub Pages](https://pages.github.com/) - Outil d’hébergement
 
 ## Auteur
 

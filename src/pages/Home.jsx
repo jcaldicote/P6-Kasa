@@ -1,5 +1,5 @@
 import MainBanner from "../components/Banner";
-import { useFetchLogements } from "../hooks/useApi";
+import { useFetchLogements } from "../hooks/useApi.js";
 import Card from "../components/Card.jsx";
 import ErrorPage from "./ErrorPage.jsx";
 import "./Home.scss";

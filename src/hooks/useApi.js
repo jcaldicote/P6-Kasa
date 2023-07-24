@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import dataUrl from "../data/data.json?url";
+import fakeFetch from "./fakeFetch.js";
 
 function useApi(method, url, body, options) {
   const [data, setData] = useState(undefined);
@@ -9,7 +10,7 @@ function useApi(method, url, body, options) {
 
   useEffect(() => {
     setLoading(true);
-    fetch(url, {
+    fakeFetch(url, {
       method,
       body,
       ...options,
