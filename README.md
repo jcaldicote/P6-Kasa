@@ -2,7 +2,8 @@
 
 Projet 6 de la formation Developpeur Web OpenClassRooms
 
-**Code source**: https://github.com/jcaldicote/P6-Kasa
+**Code source CRA**: https://github.com/jcaldicote/P6-Kasa/tree/Cra
+**Code source Vite**: https://github.com/jcaldicote/P6-Kasa/tree/Vite
 
 ## Mission
 
