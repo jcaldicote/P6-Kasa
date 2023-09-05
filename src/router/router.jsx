@@ -8,7 +8,7 @@ import About from "../pages/About.jsx";
 
 export const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/P6-Kasa/",
     element: (
       <Layout>
         <Home />

@@ -6,12 +6,12 @@ import { NavLink } from "react-router-dom";
 function Navbar() {
   return (
     <nav className="navbar">
-      <NavLink to="/">
+      <NavLink to="/P6-Kasa/">
         <div className="navbar__logo">
           <img src={logokasa} alt="logokasa" />
         </div>
       </NavLink>
-      <NavLink to="/">
+      <NavLink to="/P6-Kasa/">
         <div>Accueil</div>
       </NavLink>
       <NavLink to="/about">

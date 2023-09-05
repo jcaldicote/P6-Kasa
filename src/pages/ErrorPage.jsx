@@ -1,5 +1,5 @@
-import './ErrorPage.scss';
-import { NavLink } from 'react-router-dom';
+import "./ErrorPage.scss";
+import { NavLink } from "react-router-dom";
 
 function ErrorPage() {
   return (
@@ -8,7 +8,7 @@ function ErrorPage() {
       <p className="message__error">
         Oups! La page que vous demandez n'existe pas.
       </p>
-      <NavLink to="/" className="message__back">
+      <NavLink to="/P6-Kasa/" className="message__back">
         Retournez sur la page d'accueil.
       </NavLink>
     </div>
